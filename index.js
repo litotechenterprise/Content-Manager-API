@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const pathToFile = path.resolve("./data/resources.json");
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const cors = require("cors");
 const fs = require("fs");
 
