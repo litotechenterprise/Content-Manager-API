@@ -18,6 +18,14 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
+app.get("/api/resources/active", (req, res) => {
+  const resources = getResource();
+  const resource = resources.find((resource) => resource.status === "active");
+  if (!resource) {
+    return res.send({ message: "None Found" });
+  }
+  res.send(resource);
+});
 
 app.get("/api/resources", (req, res) => {
   const resource = getResource();
@@ -50,7 +58,23 @@ app.patch("/api/resources/:id", (req, res) => {
   const resources = getResource();
   const { id } = req.params;
   const index = resources.findIndex((resource) => resource.id === id);
+
+  if (resources[index].status === "complete") {
+    return res.status(422).send("Cannont update completed resource");
+  }
+
+  const activeResource = resources.find(
+    (resource) => resource.status === "active"
+  );
   resources[index] = req.body;
+
+  if (req.body.status === "active") {
+    if (activeResource) {
+      return res.status(422).send("There is active resource already");
+    }
+    resources[index].status = "active";
+    resources[index].activationTime = new Date();
+  }
 
   fs.writeFile(pathToFile, JSON.stringify(resources, null, 2), (err) => {
     if (err) {
