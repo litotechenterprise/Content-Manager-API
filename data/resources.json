@@ -1,32 +1,69 @@
 [
   {
-    "id": 1,
+    "title": "New Resource with conditionals UPDATED",
+    "description": "there is a new patch conditional within nextJS proxy server",
+    "link": "www.link.com",
+    "priority": "1",
+    "timeToFinish": 60,
+    "id": "1704241839782",
+    "createdAt": "2024-01-03T00:30:39.782Z",
+    "status": "inactive"
+  },
+  {
+    "title": "Reusable component Updated V2",
+    "description": "What is the reusable component?",
+    "link": "www.link.com",
+    "priority": "1",
+    "timeToFinish": "1",
+    "id": "1704240400119",
+    "createdAt": "2024-01-03T00:06:40.119Z",
+    "status": "inactive"
+  },
+  {
+    "id": "1",
     "title": "Learning Singleton Patterm",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam",
     "link": "https://link.com",
-    "image": "https://image.com",
     "priority": 3,
     "timeToFinish": 120,
     "status": "inactive"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Resource 2",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam",
     "link": "https://link.com",
-    "image": "https://image.com",
     "priority": 2,
     "timeToFinish": 45,
     "status": "inactive"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Resource 3",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam",
     "link": "https://link.com",
-    "image": "https://image.com",
     "priority": 1,
     "timeToFinish": 30,
+    "status": "inactive"
+  },
+  {
+    "title": "Testing Title",
+    "description": "Testing Description",
+    "link": "www.link.com",
+    "priority": "2",
+    "timeToFinish": 60,
+    "id": "1703791048830",
+    "createdAt": "2023-12-28T19:17:28.830Z",
+    "status": "inactive"
+  },
+  {
+    "title": "Resource #5",
+    "description": "There's so much to do this time of year I can't believe that the year is almost done",
+    "link": "www.google.com",
+    "priority": "2",
+    "timeToFinish": "500",
+    "id": "1703791211634",
+    "createdAt": "2023-12-28T19:20:11.634Z",
     "status": "inactive"
   }
 ]
